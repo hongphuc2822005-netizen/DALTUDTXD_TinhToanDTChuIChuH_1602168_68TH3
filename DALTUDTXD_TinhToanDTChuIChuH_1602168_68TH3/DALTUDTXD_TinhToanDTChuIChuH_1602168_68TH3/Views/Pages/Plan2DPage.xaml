@@ -9,6 +9,10 @@
       Title="Plan2DPage">
 
     <Grid>
-        
+        <Canvas Background="LightGray">
+            <Rectangle Width="200" Height="100" Fill="Blue" Canvas.Left="100" Canvas.Top="100"/>
+            <Ellipse Width="100" Height="100" Fill="Red" Canvas.Left="350" Canvas.Top="150"/>
+            <Line X1="50" Y1="50" X2="400" Y2="300" Stroke="Black" StrokeThickness="2"/>
+        </Canvas>
     </Grid>
 </Page>

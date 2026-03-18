@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MauDuAn_CTThietKeDam.Models
+namespace DALTUDTXD_TinhToanDTChuIChuH_1602168_68TH3.Models
 {
     public class Beam
     {
@@ -40,8 +40,8 @@ namespace MauDuAn_CTThietKeDam.Models
         }
         public double Volume
         {
-            get { return _volume; 
-            set { _volume = value;}
+            get { return _volume; }
+            set { _volume = value; }
         }
         public EtabsAPI_Frame Frame
         {
@@ -49,8 +49,13 @@ namespace MauDuAn_CTThietKeDam.Models
             set { _frame = value; }
         }
 
+        //parameterless constructor to allow object initializer usage
+        public Beam()
+        {
+        }
+
         //constructor - hàm khởi tạo
-        Beam(string id, string mark, string story)
+        public Beam(string id, string mark, string story)
         {
             _id = id;
             _mark = mark;
@@ -61,8 +66,8 @@ namespace MauDuAn_CTThietKeDam.Models
         //Kiểm tra TTGH thứ nhất của dầm
         public bool CheckTTGH1()
         {
-            
-            return 0;
+            // TODO: implement check logic. Returning false as default.
+            return false;
         }
     }
 }

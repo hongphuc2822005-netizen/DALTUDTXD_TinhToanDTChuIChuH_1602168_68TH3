@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 
-namespace MauDuAn_CTThietKeDam.Models
+namespace DALTUDTXD_TinhToanDTChuIChuH_1602168_68TH3.Models
 {
     public class EtabsAPI_Frame
     {
@@ -48,6 +49,10 @@ namespace MauDuAn_CTThietKeDam.Models
             set { _frameForces = value; }
         }
         //constructor
+        public EtabsAPI_Frame()
+        {
+            _frameForces = new ObservableCollection<EtabsAPI_FrameForce>();
+        }
 
         //method
     }

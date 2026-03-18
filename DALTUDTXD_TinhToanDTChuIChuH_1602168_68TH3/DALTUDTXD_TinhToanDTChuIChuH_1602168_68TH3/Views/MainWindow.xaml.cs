@@ -23,6 +23,7 @@ namespace DALTUDTXD_TinhToanDTChuIChuH_1602168_68TH3
         public MainWindow()
         {
             InitializeComponent();
+            
         }
     }
 }

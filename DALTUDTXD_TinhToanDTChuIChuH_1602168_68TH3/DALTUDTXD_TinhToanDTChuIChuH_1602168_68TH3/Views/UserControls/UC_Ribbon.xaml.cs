@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DALTUDTXD_TinhToanDTChuIChuH_1602168_68TH3.Views.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,29 @@ namespace DALTUDTXD_TinhToanDTChuIChuH_1602168_68TH3.Views.UserControls
     /// </summary>
     public partial class UC_Ribbon : UserControl
     {
-        public UC_Ribbon()
+        //khai báo biến 
+        private Frame Mainframe;
+        public UC_Ribbon(Frame mainFrame)
         {
             InitializeComponent();
+            this.Mainframe = mainFrame;
+        }
+
+        private void rbt_2Dplan_Click(object sender, RoutedEventArgs e)
+        {
+            Mainframe.Content = new Plan2DPage();
+        }
+
+        private void rbt_Beams_Click(object sender, RoutedEventArgs e)
+        {
+            BeamView BeamView = new BeamView();
+            BeamView.Show();
+        }
+
+        private void rbt_Frames_Click(object sender, RoutedEventArgs e)
+        {
+            EtabsAPI_FramesView EtabsFramesView = new EtabsAPI_FramesView();
+            EtabsFramesView.Show();
         }
     }
 }

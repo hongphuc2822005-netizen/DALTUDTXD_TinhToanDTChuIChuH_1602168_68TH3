@@ -22,6 +22,7 @@ namespace DALTUDTXD_TinhToanDTChuIChuH_1602168_68TH3.Views
         public BeamView()
         {
             InitializeComponent();
+            DataContext = new ViewModels.BeamViewModel();
         }
     }
 }
